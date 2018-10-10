@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE simulation SYSTEM "obstacleline.dtd"> 
+<simulation finalinst="100" initpop="10" maxpop="500" comfortsens="3"> 
+   <grid colsnb="7" rowsnb="6"/> 
+   <initialpoint xinitial="1" yinitial="1"/> 
+   <finalpoint xfinal="7" yfinal="6"/>
+   <specialcostzones num="2">
+      <zone xinitial="2" yinitial="1" xfinal="4" yfinal="3">4</zone>
+      <zone xinitial="5" yinitial="5" xfinal="7" yfinal="6">4</zone>
+   </specialcostzones>
+   <obstacles num="7">
+      <obstacle xpos="1" ypos="5"/>
+      <obstacle xpos="2" ypos="5"/>
+      <obstacle xpos="3" ypos="5"/>
+      <obstacle xpos="4" ypos="5"/>
+      <obstacle xpos="5" ypos="5"/>
+      <obstacle xpos="6" ypos="5"/>
+      <obstacle xpos="7" ypos="5"/>
+   </obstacles>
+   <events>
+      <death param="10"/>
+      <reproduction param="1"/>
+      <move param="1"/>
+   </events>
+</simulation>

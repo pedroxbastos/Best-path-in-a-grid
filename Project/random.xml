@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE simulation SYSTEM "random.dtd"> 
+<simulation finalinst="200" initpop="30" maxpop="700" comfortsens="4"> 
+   <grid colsnb="16" rowsnb="17"/> 
+   <initialpoint xinitial="1" yinitial="1"/> 
+   <finalpoint xfinal="14" yfinal="14"/>
+   <specialcostzones num="6">
+      <zone xinitial="2" yinitial="1" xfinal="4" yfinal="3">4</zone>
+      <zone xinitial="5" yinitial="5" xfinal="7" yfinal="6">2</zone>
+      <zone xinitial="7" yinitial="7" xfinal="10" yfinal="12">3</zone>
+      <zone xinitial="9" yinitial="8" xfinal="12" yfinal="13">5</zone>
+      <zone xinitial="1" yinitial="1" xfinal="3" yfinal="3">4</zone>
+      <zone xinitial="5" yinitial="1" xfinal="7" yfinal="1">7</zone>
+   </specialcostzones>
+   <obstacles num="6">
+      <obstacle xpos="1" ypos="5"/>
+      <obstacle xpos="7" ypos="7"/>
+      <obstacle xpos="4" ypos="5"/>
+      <obstacle xpos="3" ypos="8"/>
+      <obstacle xpos="13" ypos="11"/>
+      <obstacle xpos="11" ypos="9"/>
+   </obstacles>
+   <events>
+      <death param="10"/>
+      <reproduction param="1"/>
+      <move param="1"/>
+   </events>
+</simulation>
